@@ -9,6 +9,8 @@
             <v-col cols="2" class="grey lighten-4 block-side">
             </v-col>
             <v-col cols="8" class="text-center black--text grey lighten-5">
+                <h1 class="portfolio-title text-center">Portfolio</h1>
+                <hr>
                 <img src="../../public/Img/FP_1.png" class="profilePhoto">
                 <br>
                 <h2>Mateo Alonso Pabón García</h2>
@@ -16,8 +18,10 @@
                 <hr>
                 <p>{{ProfileDescription}}</p>
                 <br>
+                <a id="languages"></a>
                 <info-block :title-info="titleInfoBlockLanguages" :images-info="imagesInfoLanguages"/>
                 <p>I've made many projects along my studies, like social networks, application systems, and the most important project that I've made with my university classmates is a smart recycling assistant</p>
+                <a id="projects"></a>
                 <info-block :title-info="titleInfoBlockProjects" :images-info="imagesInfoProjects"/>
                 <br>
             </v-col>
@@ -117,6 +121,9 @@ export default {
     }
     .block-side{
         opacity:.85;
+    }
+    .portfolio-title{
+        margin:10vh 0vw;
     }
     // # Profile Photo
     .profilePhoto{

@@ -5,7 +5,9 @@
         <v-col cols="4">
           <p>Contact:</p>
           <p>Email: matepabon@gmail.com</p>
-          <i class="far fa-envelope"></i>
+          <a href>
+            <i class="far fa-envelope"></i>
+          </a>
         </v-col>
         <v-col cols="4">
           <p>Social Networks:</p>
@@ -36,13 +38,14 @@ export default {
 <style lang="scss" scoped>
 @import "../scss/_variables.scss";
 
-a{
+a, a:link, a:visited{
+  all:unset;
   background-color:transparent;
   color:unset;
   text-decoration: none;
-  &:hover, &:link, &:visited{
-    color:unset;
-    text-decoration:none; 
+  transition:color .7s;
+  &:hover{
+    color:#c8c8c8; 
   }
 }
 i{
